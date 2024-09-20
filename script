@@ -1,0 +1,20 @@
+// Simple toggle functionality for Movies/TV Shows
+        const toggleButtons = document.querySelectorAll('.trending-toggle button');
+        const sections = document.querySelectorAll('.trending-section');
+
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('data-target');
+                
+                toggleButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                sections.forEach(section => {
+                    if (section.id === target) {
+                        section.classList.add('active');
+                    } else {
+                        section.classList.remove('active');
+                    }
+                });
+            });
+        });

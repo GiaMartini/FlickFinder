@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flick Finder - Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner-container">
+            <img src="images/movie-camera-banner.jpg" alt="Flick Finder Banner" class="banner">
+            <h1 class="site-title">Flick Finder</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="news.html">Movie News</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Movie Reviews</h2>
+
+        <section class="review-filters">
+            <h3>Filter Reviews</h3>
+            <select id="sort-by">
+                <option value="recent">Most Recent</option>
+                <option value="rating-high">Highest Rated</option>
+                <option value="rating-low">Lowest Rated</option>
+            </select>
+            <select id="genre-filter">
+                <option value="all">All Genres</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="sci-fi">Sci-Fi</option>
+            </select>
+            <button id="apply-filters">Apply Filters</button>
+        </section>
+
+        <section class="featured-review">
+            <h3>Featured Review</h3>
+            <div class="review-card featured">
+                <img src="images/inception.jpeg" alt="Inception Movie Poster" class="review-poster">
+                <div class="review-content">
+                    <h4>Inception</h4>
+                    <div class="review-meta">
+                        <span class="review-author">By John Doe</span>
+                        <span class="review-date">September 15, 2024</span>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-text">
+                        "Inception is a mind-bending masterpiece that challenges the viewer's perception of reality. Christopher Nolan's direction is impeccable, weaving a complex narrative that keeps you on the edge of your seat. The stellar cast, led by Leonardo DiCaprio, brings depth to their characters, making the emotional stakes just as high as the conceptual ones. The visual effects are groundbreaking, creating dreamscapes that are both beautiful and unsettling. This film is not just entertainment; it's an experience that will leave you pondering long after the credits roll."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-reviews">
+            <h3>Recent Reviews</h3>
+            <div class="review-grid">
+                <div class="review-card">
+                    <img src="images/dune.jpeg" alt="Dune Movie Poster" class="review-poster">
+                    <div class="review-content">
+                        <h4>Dune</h4>
+                        <div class="review-meta">
+                            <span class="review-author">By Jane Smith</span>
+                            <span class="review-date">September 10, 2024</span>
+                            <span class="review-rating">★★★★☆</span>
+                        </div>
+                        <p class="review-text">
+                            "A visually stunning adaptation of the classic sci-fi novel. Denis Villeneuve's direction brings the world of Arrakis to life with breathtaking cinematography and sound design..."
+                        </p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="images/shank.jpeg" alt="The Shawshank Redemption Movie Poster" class="review-poster">
+                    <div class="review-content">
+                        <h4>The Shawshank Redemption</h4>
+                        <div class="review-meta">
+                            <span class="review-author">By Mike Johnson</span>
+                            <span class="review-date">September 5, 2024</span>
+                            <span class="review-rating">★★★★★</span>
+                        </div>
+                        <p class="review-text">
+                            "A timeless classic that explores the resilience of the human spirit. The performances by Tim Robbins and Morgan Freeman are nothing short of extraordinary..."
+                        </p>
+                    </div>
+                </div>
+              
+            </div>
+        </section>
+
+        <section class="submit-review">
+            <h3>Submit Your Review</h3>
+            <form id="review-form">
+                <input type="text" id="movie-title" placeholder="Movie Title" required>
+                <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+                <div class="rating-input">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" required>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                </div>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flick Finder. All rights reserved.</p>
+    </footer>
+</body>
+</html>
