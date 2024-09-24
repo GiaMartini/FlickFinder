@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flick Finder - Trending</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeToggle" class="dark-mode-checkbox">
+        <label for="darkModeToggle" class="dark-mode-label">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
     <header>
         <div class="banner-container">
             <img src="images/movie-camera-banner.jpg" alt="Flick Finder Banner" class="banner">
@@ -137,10 +146,6 @@
     <footer>
         <p>&copy; 2024 Flick Finder. All rights reserved.</p>
     </footer>
-
-    <script>
-       
-        
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
