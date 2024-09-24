@@ -29,7 +29,7 @@ header {
 
 .banner-container {
     width: 100%;
-    height: 300px; /* Adjust as needed */
+    height: 400px; 
     overflow: hidden;
     position: relative;
 }
@@ -38,6 +38,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .site-title {
@@ -45,10 +46,9 @@ header {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 48px;
-    font-weight: bold;
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
 }
 
 nav {
@@ -114,18 +114,14 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-    
+/* Responsive adjustments */
+@media (max-width: 768px) {
     .banner-container {
         height: 200px; /* Smaller height for mobile devices */
     }
-    
+
     .site-title {
-        font-size: 36px;
+        font-size: 2em;
     }
 }
 
