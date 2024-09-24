@@ -725,3 +725,67 @@ footer {
   body.dark-mode #newQuoteBtn:hover {
     background-color: #c0392b;
   }
+
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#movieSearch {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#searchButton:hover {
+    background-color: #2980b9;
+}
+/* Existing styles for movie items */
+.movie-item {
+    background-color: #f9f9f9;
+    color: #333; /* Dark text color for light mode */
+    /* other existing styles */
+}
+
+/* Dark mode styles */
+body.dark-mode .movie-item {
+    background-color: #2c3e50; /* Darker background for dark mode */
+    color: #ecf0f1; /* Light text color for dark mode */
+}
+
+body.dark-mode .movie-item h4 {
+    color: #3498db; /* Light blue color for movie titles in dark mode */
+}
+
+body.dark-mode .movie-info {
+    background-color: #34495e; /* Slightly lighter background for movie info in dark mode */
+    color: #ecf0f1; /* Light text color for dark mode */
+}
+
+body.dark-mode .movie-info h4 {
+    color: #3498db; /* Light blue color for movie titles in dark mode */
+}
+
+/* Ensure links are visible in dark mode */
+body.dark-mode .movie-item a,
+body.dark-mode .movie-info a {
+    color: #e74c3c; /* Red color for links in dark mode */
+}
+
+body.dark-mode .movie-item a:hover,
+body.dark-mode .movie-info a:hover {
+    color: #c0392b; /* Darker red for link hover in dark mode */
+}

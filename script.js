@@ -85,3 +85,34 @@
               newQuoteBtn.addEventListener('click', displayNewQuote);
             }
           });
+          
+          // Movie Search bar
+          document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('movieSearch');
+            const searchButton = document.getElementById('searchButton');
+            const movieItems = document.querySelectorAll('.movie-item');
+        
+            function performSearch() {
+                const searchTerm = searchInput.value.toLowerCase();
+                
+                movieItems.forEach(item => {
+                    const title = item.querySelector('h4').textContent.toLowerCase();
+                    const director = item.querySelector('p:nth-of-type(1)').textContent.toLowerCase();
+                    const stars = item.querySelector('p:nth-of-type(2)').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || director.includes(searchTerm) || stars.includes(searchTerm)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        
+            searchButton.addEventListener('click', performSearch);
+        
+            searchInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    performSearch();
+                }
+            });
+        });
