@@ -63,10 +63,10 @@
               { quote: "E.T. phone home.", movie: "E.T. the Extra-Terrestrial" },
               { quote: "Here's looking at you, kid.", movie: "Casablanca" },
               { quote: "I'll be back.", movie: "The Terminator" },
-              { quote: "You can't handle the truth!", movie: "A Few Good Men" },
+              { quote: "I must not fear. Fear is the mind killer", movie: "Dune" },
               { quote: "I see dead people.", movie: "The Sixth Sense" },
               { quote: "You're gonna need a bigger boat.", movie: "Jaws" },
-              { quote: "I'm king of the world!", movie: "Titanic" }
+              { quote: "I feel the need - the need to speed!", movie: "Top Gun" }
             ];
           
             const quoteDisplay = document.getElementById('quoteDisplay');
