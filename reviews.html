@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flick Finder - Reviews</title>
+    <title>Movie Reviews - Flick Finder</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="dark-mode-toggle">
         <input type="checkbox" id="darkModeToggle" class="dark-mode-checkbox">
         <label for="darkModeToggle" class="dark-mode-label">
-          <i class="fas fa-sun"></i>
-          <i class="fas fa-moon"></i>
-          <div class="ball"></div>
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
         </label>
-      </div>
+    </div>
+
     <header>
         <div class="banner-container">
             <img src="images/filmtape.jpeg" alt="Flick Finder Banner" class="banner">
-            <h1 class="site-title">Flick Finder</h1>
+            <h1 id="flick-finder" class="site-title">Flick Finder</h1>
         </div>
         <nav>
             <ul>
@@ -35,6 +36,7 @@
 
     <main>
         <h2>Movie Reviews</h2>
+
         <section class="featured-review">
             <h3>Featured Review</h3>
             <div class="review-card featured">
@@ -46,9 +48,7 @@
                         <span class="review-date">September 15, 2024</span>
                         <span class="review-rating">★★★★★</span>
                     </div>
-                    <p class="review-text">
-                        "Inception is a mind-bending masterpiece that challenges the viewer's perception of reality. Christopher Nolan's direction is impeccable, weaving a complex narrative that keeps you on the edge of your seat. The stellar cast, led by Leonardo DiCaprio, brings depth to their characters, making the emotional stakes just as high as the conceptual ones. The visual effects are groundbreaking, creating dreamscapes that are both beautiful and unsettling. This film is not just entertainment; it's an experience that will leave you pondering long after the credits roll."
-                    </p>
+                    <p>"Inception is a mind-bending masterpiece that challenges the viewer's perception of reality. Christopher Nolan's direction is impeccable, weaving a complex narrative that keeps you on the edge of your seat. The stellar cast, led by Leonardo DiCaprio, brings depth to their characters, making the emotional stakes just as high as the conceptual ones. The visual effects are groundbreaking, creating dreamscapes that are both beautiful and unsettling. This film is not just entertainment; it's an experience that will leave you pondering long after the credits roll."</p>
                 </div>
             </div>
         </section>
@@ -65,9 +65,7 @@
                             <span class="review-date">September 10, 2024</span>
                             <span class="review-rating">★★★★☆</span>
                         </div>
-                        <p class="review-text">
-                            "A visually stunning adaptation of the classic sci-fi novel. Denis Villeneuve's direction brings the world of Arrakis to life with breathtaking cinematography and sound design..."
-                        </p>
+                        <p>"A visually stunning adaptation of the classic sci-fi novel. Denis Villeneuve's direction brings the world of Arrakis to life with breathtaking cinematography and sound design..."</p>
                     </div>
                 </div>
                 <div class="review-card">
@@ -79,23 +77,18 @@
                             <span class="review-date">September 5, 2024</span>
                             <span class="review-rating">★★★★★</span>
                         </div>
-                        <p class="review-text">
-                            "A timeless classic that explores the resilience of the human spirit. The performances by Tim Robbins and Morgan Freeman are nothing short of extraordinary..."
-                        </p>
+                        <p>"A timeless classic that explores the resilience of the human spirit. The performances by Tim Robbins and Morgan Freeman are nothing short of extraordinary..."</p>
                     </div>
                 </div>
-              
             </div>
         </section>
 
         <section class="submit-review">
             <h3>Submit Your Review</h3>
-            <form id="review-form">
-                <input type="text" id="movie-title" placeholder="Movie Title" required>
-                <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+            <form>
                 <div class="rating-input">
                     <label for="rating">Rating:</label>
-                    <select id="rating" required>
+                    <select id="rating" name="rating">
                         <option value="5">★★★★★</option>
                         <option value="4">★★★★☆</option>
                         <option value="3">★★★☆☆</option>
@@ -111,6 +104,7 @@
     <footer>
         <p>&copy; 2024 Flick Finder. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
