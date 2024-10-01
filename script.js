@@ -1,4 +1,4 @@
-// Simple toggle functionality for Movies/TV Shows
+// Simple toggle functionality for Movies-TV Shows
         const toggleButtons = document.querySelectorAll('.trending-toggle button');
         const sections = document.querySelectorAll('.trending-section');
 
@@ -116,3 +116,30 @@
                 }
             });
         });
+            // FORM Review
+        document.addEventListener('DOMContentLoaded', function() {
+          const reviewForm = document.getElementById('reviewForm');
+          const submissionMessage = document.getElementById('submissionMessage');
+      
+          if (reviewForm) {
+              reviewForm.addEventListener('submit', function(e) {
+                  e.preventDefault();
+      
+                  // Simulate form submission (replace this with actual form submission logic)
+                  setTimeout(function() {
+                      // Display success message
+                      submissionMessage.textContent = "Thank you for submitting your review!";
+                      submissionMessage.className = "submission-message success";
+                      submissionMessage.style.display = "block";
+      
+                      // Clear form fields
+                      reviewForm.reset();
+      
+                      // Hide message after 5 seconds
+                      setTimeout(function() {
+                          submissionMessage.style.display = "none";
+                      }, 5000);
+                  }, 1000);
+              });
+          }
+      });

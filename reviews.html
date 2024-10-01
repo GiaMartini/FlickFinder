@@ -85,10 +85,19 @@
 
         <section class="submit-review">
             <h3>Submit Your Review</h3>
-            <form>
-                <div class="rating-input">
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label for="movieTitle">Movie Title:</label>
+                    <input type="text" id="movieTitle" name="movieTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="reviewerName">Your Name:</label>
+                    <input type="text" id="reviewerName" name="reviewerName" required>
+                </div>
+                <div class="form-group">
                     <label for="rating">Rating:</label>
-                    <select id="rating" name="rating">
+                    <select id="rating" name="rating" required>
+                        <option value="">Select a rating</option>
                         <option value="5">★★★★★</option>
                         <option value="4">★★★★☆</option>
                         <option value="3">★★★☆☆</option>
@@ -96,8 +105,13 @@
                         <option value="1">★☆☆☆☆</option>
                     </select>
                 </div>
+                <div class="form-group">
+                    <label for="reviewText">Your Review:</label>
+                    <textarea id="reviewText" name="reviewText" rows="5" required></textarea>
+                </div>
                 <button type="submit">Submit Review</button>
             </form>
+            <div id="submissionMessage" class="submission-message" style="display: none;"></div>
         </section>
     </main>
 
